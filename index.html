@@ -1,0 +1,1959 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover quality cleaning solutions from CLEANYA. Explore our floor cleaning products and everyday hygiene essentials.">
+<meta name="theme-color" content="#f7faf6">
+<title>CLEANYA | A Cleaner Space, A Better Life</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="STYLE.CSS">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+:root {
+    --green: #16834b;
+    --green-dark: #0c6036;
+    --green-light: #e9f5ec;
+    --lime: #c8e878;
+    --dark: #17251e;
+    --muted: #69776e;
+    --white: #ffffff;
+    --bg: #f7faf6;
+    --border: #e5ece5;
+    --shadow: 0 15px 45px rgba(22, 70, 42, .09);
+    --radius: 22px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.container {
+    width: min(1160px, 90%);
+    margin: auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    margin-bottom: 18px;
+}
+
+.section-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.15;
+    letter-spacing: -1.8px;
+    font-weight: 800;
+}
+
+.section-description {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-top: 15px;
+    max-width: 570px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 24px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid transparent;
+    transition: .3s ease;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--green-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px #16834b35;
+}
+
+.btn-outline {
+    border-color: var(--border);
+    color: var(--dark);
+    background: white;
+}
+
+.btn-outline:hover {
+    border-color: var(--green);
+    color: var(--green);
+    transform: translateY(-3px);
+}
+
+/* NAVIGATION */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo-icon {
+    width: 43px;
+    height: 43px;
+    background: var(--green);
+    color: white;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+}
+
+.logo-name {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo-name span {
+    color: var(--green);
+}
+
+.logo small {
+    display: block;
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #58665d;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-actions .btn {
+    padding: 12px 19px;
+    font-size: 12px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 23px;
+    color: var(--dark);
+}
+
+/* HERO */
+
+.hero {
+    padding: 80px 0 90px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 85% 30%, #d8f0d9 0, transparent 30%),
+        linear-gradient(120deg, #f7faf6, #eff8ed);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-label {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 15px;
+    border: 1px solid #d5e8d7;
+    background: white;
+    color: var(--green);
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: .7px;
+}
+
+.hero-label i {
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(43px, 6vw, 70px);
+    font-weight: 800;
+    line-height: 1.07;
+    letter-spacing: -3.5px;
+}
+
+.hero h1 span {
+    color: var(--green);
+}
+
+.hero-content > p {
+    max-width: 490px;
+    margin: 24px 0 30px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.note-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background: #e2f2e4;
+    color: var(--green);
+    border-radius: 50%;
+}
+
+.hero-note p {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.hero-note strong {
+    color: var(--dark);
+    display: block;
+    font-size: 12px;
+}
+
+.hero-visual {
+    min-height: 480px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.visual-circle {
+    width: 380px;
+    height: 380px;
+    max-width: 90%;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d7edce, #b4dcae);
+    position: absolute;
+}
+
+.hero-product {
+    position: relative;
+    z-index: 2;
+    width: 205px;
+    height: 340px;
+    background: linear-gradient(90deg,#dce7d5,#ffffff 25%,#f7fff1 70%,#c9e3c5);
+    border-radius: 35px 35px 26px 26px;
+    box-shadow: 20px 30px 45px #285c3430;
+    transform: rotate(-7deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.hero-product:hover {
+    transform: rotate(0deg) translateY(-10px);
+}
+
+.bottle-neck {
+    position: absolute;
+    width: 65px;
+    height: 48px;
+    top: -42px;
+    background: #e3eee0;
+    border-radius: 8px 8px 4px 4px;
+    border: 3px solid #c4d8bf;
+}
+
+.bottle-cap {
+    position: absolute;
+    top: -65px;
+    width: 78px;
+    height: 28px;
+    border-radius: 7px 7px 3px 3px;
+    background: var(--green-dark);
+}
+
+.bottle-label {
+    width: 88%;
+    height: 175px;
+    background: linear-gradient(145deg, #167e46, #0c542f);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 20px 8px;
+    box-shadow: inset 0 0 15px #ffffff12;
+}
+
+.bottle-label small {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #d9f3b4;
+}
+
+.bottle-label h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 21px;
+    margin-top: 12px;
+    line-height: 1.1;
+}
+
+.bottle-label p {
+    font-size: 9px;
+    margin-top: 12px;
+    color: #e1f0dc;
+}
+
+.bottle-label .leaf {
+    font-size: 29px;
+    margin-top: 10px;
+    color: #c9ed85;
+}
+
+.floating-card {
+    position: absolute;
+    z-index: 3;
+    background: white;
+    box-shadow: var(--shadow);
+    padding: 15px 18px;
+    border-radius: 15px;
+    font-size: 12px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.floating-card i {
+    color: var(--green);
+    margin-right: 7px;
+}
+
+.floating-one {
+    top: 75px;
+    left: 0;
+}
+
+.floating-two {
+    bottom: 65px;
+    right: 0;
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* TRUST BAR */
+
+.trust-bar {
+    background: white;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.trust-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.trust-item i {
+    font-size: 23px;
+    color: var(--green);
+}
+
+.trust-item strong {
+    display: block;
+    font-size: 13px;
+}
+
+.trust-item span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* PRODUCTS */
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: .35s;
+}
+
+.product-card:hover {
+    transform: translateY(-9px);
+    box-shadow: var(--shadow);
+}
+
+.product-image {
+    height: 260px;
+    background: linear-gradient(145deg,#edf6e9,#dcefdc);
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image::before {
+    content: "";
+    width: 190px;
+    height: 190px;
+    border: 1px solid #ffffffa0;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.mini-bottle {
+    width: 110px;
+    height: 180px;
+    position: relative;
+    background: linear-gradient(90deg,#cbdcc4,#fff 35%,#d7e8d0);
+    border-radius: 17px 17px 13px 13px;
+    box-shadow: 10px 20px 30px #345c3525;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    transition: .4s;
+}
+
+.product-card:hover .mini-bottle {
+    transform: translateY(-8px) rotate(-4deg);
+}
+
+.mini-bottle::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 28px;
+    background: var(--green-dark);
+    top: -23px;
+    border-radius: 5px 5px 2px 2px;
+}
+
+.mini-bottle::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 24px;
+    top: -42px;
+    background: #c5d9bd;
+    border-radius: 4px;
+}
+
+.mini-label {
+    background: var(--green);
+    color: white;
+    width: 90%;
+    padding: 15px 4px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.mini-label small {
+    display: block;
+    font-size: 7px;
+    margin-top: 6px;
+    color: #d9edbd;
+}
+
+.product-content {
+    padding: 24px;
+}
+
+.product-category {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--green);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.product-content h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.product-content p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    min-height: 48px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+    padding-top: 17px;
+}
+
+.product-bottom span {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.product-bottom a {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.about-visual {
+    min-height: 410px;
+    background: linear-gradient(145deg,#e5f4e2,#cce7c9);
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-visual i.main-icon {
+    font-size: 135px;
+    color: var(--green);
+    opacity: .9;
+    filter: drop-shadow(12px 20px 15px #0c603635);
+}
+
+.about-sticker {
+    position: absolute;
+    background: white;
+    border-radius: 16px;
+    padding: 15px 20px;
+    box-shadow: var(--shadow);
+    bottom: 30px;
+    right: 25px;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.about-sticker i {
+    color: var(--green);
+    margin-right: 8px;
+}
+
+.about-text > p {
+    color: var(--muted);
+    line-height: 1.9;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.about-points {
+    display: grid;
+    gap: 18px;
+    margin: 25px 0 30px;
+}
+
+.about-point {
+    display: flex;
+    gap: 13px;
+}
+
+.about-point i {
+    color: var(--green);
+    background: var(--green-light);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+.about-point strong {
+    font-size: 13px;
+}
+
+.about-point p {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+/* BENEFITS */
+
+.benefits {
+    background: var(--bg);
+}
+
+.center-heading {
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+.center-heading .section-description {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px 23px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    transition: .3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-7px);
+    border-color: #b6d9b8;
+}
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    color: var(--green);
+    background: var(--green-light);
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.benefit-card h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+/* FUTURE CATEGORIES */
+
+.categories {
+    background: white;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+}
+
+.category-card {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 24px 15px;
+    text-align: center;
+    transition: .3s;
+    background: #fcfefb;
+}
+
+.category-card:hover {
+    background: var(--green-light);
+    transform: translateY(-5px);
+}
+
+.category-card i {
+    font-size: 26px;
+    color: var(--green);
+    margin-bottom: 14px;
+}
+
+.category-card h3 {
+    font-size: 13px;
+}
+
+.category-card span {
+    display: inline-block;
+    color: #8a968e;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+/* CTA */
+
+.cta-section {
+    padding: 75px 0;
+    background: var(--bg);
+}
+
+.cta-box {
+    background: linear-gradient(115deg,#0c6036,#16834b);
+    border-radius: 30px;
+    padding: 65px 55px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-box::after {
+    content: "";
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ffffff25;
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+    top: -150px;
+}
+
+.cta-box h2 {
+    font-family: 'Manrope',sans-serif;
+    font-size: clamp(27px,4vw,40px);
+    letter-spacing: -1.5px;
+    max-width: 570px;
+}
+
+.cta-box p {
+    color: #d2e9d6;
+    font-size: 13px;
+    margin-top: 14px;
+    line-height: 1.8;
+}
+
+.cta-box .btn {
+    background: white;
+    color: var(--green-dark);
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.cta-box .btn:hover {
+    transform: translateY(-4px);
+    background: var(--lime);
+}
+
+/* CONTACT */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 60px;
+}
+
+.contact-details {
+    margin-top: 30px;
+    display: grid;
+    gap: 22px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-item i {
+    width: 45px;
+    height: 45px;
+    border-radius: 13px;
+    background: var(--green-light);
+    color: var(--green);
+    display: grid;
+    place-items: center;
+}
+
+.contact-item strong {
+    font-size: 13px;
+    display: block;
+}
+
+.contact-item span {
+    font-size: 12px;
+    color: var(--muted);
+    display: block;
+    margin-top: 5px;
+}
+
+.contact-form {
+    padding: 35px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 23px;
+    box-shadow: var(--shadow);
+}
+
+.contact-form h3 {
+    font-family: 'Manrope',sans-serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.contact-form > p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border);
+    background: #fafcfa;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: .2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--green);
+    background: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+}
+
+.form-message {
+    color: var(--green);
+    font-size: 12px;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer {
+    background: #12241a;
+    color: white;
+    padding: 65px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 45px;
+    padding-bottom: 45px;
+}
+
+.footer-brand p {
+    font-size: 12px;
+    color: #aabbb0;
+    line-height: 1.9;
+    max-width: 270px;
+    margin-top: 20px;
+}
+
+footer .logo-name {
+    color: white;
+}
+
+footer .logo small {
+    color: #aabbb0;
+}
+
+.footer-column h4 {
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.footer-column a {
+    display: block;
+    color: #aabbb0;
+    font-size: 12px;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+
+.footer-column a:hover {
+    color: var(--lime);
+    transform: translateX(4px);
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.socials a {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    background: #263b2e;
+    border-radius: 50%;
+    color: white;
+    margin: 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff18;
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #94a79a;
+    font-size: 11px;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #20bd65;
+    color: white;
+    font-size: 26px;
+    box-shadow: 0 8px 25px #0003;
+    z-index: 999;
+    transition: .3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* ANIMATIONS */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: .7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+    .nav-links {
+        gap: 17px;
+    }
+
+    .hero-grid {
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 51px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about-grid {
+        gap: 35px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 700px) {
+    .section {
+        padding: 75px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-actions > .btn {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 5%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        padding: 65px 0 45px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px,12vw,60px);
+    }
+
+    .hero-visual {
+        min-height: 400px;
+    }
+
+    .visual-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-product {
+        transform: scale(.85) rotate(-7deg);
+    }
+
+    .products-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 240px;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .trust-item {
+        justify-content: flex-start;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-visual {
+        min-height: 300px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cta-box {
+        padding: 40px 27px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        line-height: 1.7;
+    }
+}
+
+@media(max-width: 390px) {
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div>
+                <div class="logo-name">CLEAN<span>YA.</span></div>
+                <small>A CLEANER WAY OF LIVING</small>
+            </div>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="#contact" class="btn btn-primary">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="hero-label">
+                <i class="fa-solid fa-sparkles"></i>
+                YOUR EVERYDAY CLEANING PARTNER
+            </div>
+
+            <h1>
+                A Cleaner Space.<br>
+                A <span>Better Life.</span>
+            </h1>
+
+            <p>
+                Discover everyday cleaning essentials designed to
+                make your spaces feel fresh, clean and welcoming.
+                Quality cleaning solutions for everyday living.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">
+                    Explore Products <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#about" class="btn btn-outline">
+                    Discover Our Brand
+                </a>
+            </div>
+
+            <div class="hero-note">
+                <div class="note-icon"><i class="fa-solid fa-droplet"></i></div>
+                <p>
+                    <strong>Everyday Cleaning Essentials</strong>
+                    Helping you care for your surroundings.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="hero-visual reveal">
+
+            <div class="visual-circle"></div>
+
+            <div class="floating-card floating-one">
+                <i class="fa-solid fa-leaf"></i> Freshness for everyday
+            </div>
+
+            <div class="hero-product">
+                <div class="bottle-cap"></div>
+                <div class="bottle-neck"></div>
+                <div class="bottle-label">
+                    <small>CLEAN<span>YA</span></small>
+                    <div class="leaf"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>FLOOR<br>CLEANER</h3>
+                    <p>EVERYDAY CLEANING CARE</p>
+                </div>
+            </div>
+
+            <div class="floating-card floating-two">
+                <i class="fa-solid fa-house"></i> Care for your space
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+    <div class="container trust-grid">
+
+        <div class="trust-item">
+            <i class="fa-solid fa-bottle-water"></i>
+            <div>
+                <strong>Everyday Essentials</strong>
+                <span>Made for daily cleaning needs</span>
+            </div>
+        </div>
+
+        <div class="trust-item">
+            <i class="fa-solid fa-handshake"></i>
+            <div>
+                <strong>Customer Focused</strong>
+                <span>Service you can count on</span>
+            </div>
+        </div>
+
+        <div class="trust-item">
+            <i class="fa-solid fa-seedling"></i>
+            <div>
+                <strong>Growing With You</strong>
+                <span>More cleaning solutions ahead</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+    <div class="container">
+
+        <div class="products-header reveal">
+            <div>
+                <span class="section-tag">OUR PRODUCT COLLECTION</span>
+                <h2 class="section-heading">Simple solutions.<br>Cleaner surroundings.</h2>
+                <p class="section-description">
+                    Explore our current cleaning product and stay connected
+                    as we expand our collection.
+                </p>
+            </div>
+
+            <a href="#contact" class="btn btn-outline">
+                Enquire Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- CURRENT PRODUCT -->
+            <article class="product-card reveal">
+
+                <div class="product-image">
+                    <div class="mini-bottle">
+                        <div class="mini-label">
+                            CLEAN<span>YA</span>
+                            <small>PHENYL</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+                    <span class="product-category">AVAILABLE NOW</span>
+                    <h3>Phenyl Floor Cleaner</h3>
+                    <p>
+                        An everyday floor-cleaning product for your
+                        regular household and workplace cleaning needs.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>Product enquiry</span>
+                        <a href="#contact">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- FUTURE PRODUCT -->
+            <article class="product-card reveal">
+
+                <div class="product-image">
+                    <div class="mini-bottle">
+                        <div class="mini-label" style="background:#2785a5">
+                            CLEAN<span>YA</span>
+                            <small>TOILET CARE</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+                    <span class="product-category">COMING SOON</span>
+                    <h3>Toilet Cleaner</h3>
+                    <p>
+                        A future addition to our growing range of
+                        everyday household cleaning solutions.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>Future collection</span>
+                        <a href="#contact">Stay Updated <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- FUTURE PRODUCT -->
+            <article class="product-card reveal">
+
+                <div class="product-image">
+                    <div class="mini-bottle">
+                        <div class="mini-label" style="background:#bd8b32">
+                            CLEAN<span>YA</span>
+                            <small>DISH CARE</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+                    <span class="product-category">COMING SOON</span>
+                    <h3>Dishwashing Liquid</h3>
+                    <p>
+                        We are exploring more products to support
+                        your everyday cleaning requirements.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>Future collection</span>
+                        <a href="#contact">Stay Updated <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+    <div class="container about-grid">
+
+        <div class="about-visual reveal">
+            <i class="fa-solid fa-house-chimney main-icon"></i>
+            <div class="about-sticker">
+                <i class="fa-solid fa-heart"></i>
+                Care begins with cleanliness.
+            </div>
+        </div>
+
+        <div class="about-text reveal">
+
+            <span class="section-tag">ABOUT OUR BRAND</span>
+
+            <h2 class="section-heading">
+                We believe every space deserves better care.
+            </h2>
+
+            <p>
+                At CLEANYA, our goal is to make everyday cleaning
+                simpler and more accessible. We are building a
+                cleaning-products brand focused on practical
+                solutions for homes, businesses and workplaces.
+            </p>
+
+            <p>
+                Starting with Phenyl, we aim to gradually expand
+                our collection and serve more everyday cleaning needs.
+            </p>
+
+            <div class="about-points">
+
+                <div class="about-point">
+                    <i class="fa-solid fa-check"></i>
+                    <div>
+                        <strong>Practical Cleaning Solutions</strong>
+                        <p>Products designed around everyday requirements.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <i class="fa-solid fa-check"></i>
+                    <div>
+                        <strong>Customer First Approach</strong>
+                        <p>Building lasting relationships through dependable service.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <i class="fa-solid fa-check"></i>
+                    <div>
+                        <strong>Continuous Growth</strong>
+                        <p>Working towards a wider range of cleaning essentials.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#contact" class="btn btn-primary">
+                Connect With Us <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section benefits" id="why-us">
+    <div class="container">
+
+        <div class="center-heading reveal">
+            <span class="section-tag">WHY CHOOSE US</span>
+            <h2 class="section-heading">More than just cleaning products.</h2>
+            <p class="section-description">
+                We want to create a brand that customers can approach
+                with confidence for their everyday cleaning needs.
+            </p>
+        </div>
+
+        <div class="benefit-grid">
+
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fa-solid fa-star"></i></div>
+                <h3>Quality Focused</h3>
+                <p>We aim to maintain consistent product quality and customer satisfaction.</p>
+            </div>
+
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fa-solid fa-house"></i></div>
+                <h3>Everyday Use</h3>
+                <p>Cleaning essentials for homes, shops, offices and other spaces.</p>
+            </div>
+
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fa-solid fa-comments"></i></div>
+                <h3>Customer Support</h3>
+                <p>We value your questions, feedback and product enquiries.</p>
+            </div>
+
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <h3>Growing Collection</h3>
+                <p>Our vision is to bring more useful cleaning products under one brand.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FUTURE CATEGORIES -->
+<section class="section categories">
+    <div class="container">
+
+        <div class="center-heading reveal">
+            <span class="section-tag">OUR FUTURE VISION</span>
+            <h2 class="section-heading">One brand. More ways to care.</h2>
+            <p class="section-description">
+                We plan to explore a broader range of cleaning and
+                hygiene products as our brand grows.
+            </p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card reveal">
+                <i class="fa-solid fa-bottle-water"></i>
+                <h3>Floor Cleaners</h3>
+                <span>Product category</span>
+            </div>
+
+            <div class="category-card reveal">
+                <i class="fa-solid fa-toilet"></i>
+                <h3>Toilet Cleaners</h3>
+                <span>Future range</span>
+            </div>
+
+            <div class="category-card reveal">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Dishwashing</h3>
+                <span>Future range</span>
+            </div>
+
+            <div class="category-card reveal">
+                <i class="fa-solid fa-pump-soap"></i>
+                <h3>Handwash</h3>
+                <span>Future range</span>
+            </div>
+
+            <div class="category-card reveal">
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+                <h3>Surface Cleaners</h3>
+                <span>Future range</span>
+            </div>
+
+            <div class="category-card reveal">
+                <i class="fa-solid fa-shirt"></i>
+                <h3>Laundry Care</h3>
+                <span>Future range</span>
+            </div>
+
+            <div class="category-card reveal">
+                <i class="fa-solid fa-wind"></i>
+                <h3>Fresheners</h3>
+                <span>Future range</span>
+            </div>
+
+            <div class="category-card reveal">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <h3>More Essentials</h3>
+                <span>Coming in the future</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box reveal">
+
+            <div>
+                <h2>Let's make every space a little cleaner.</h2>
+                <p>
+                    Interested in our Phenyl product or looking for
+                    cleaning solutions for your business? Let's talk.
+                </p>
+            </div>
+
+            <a href="#contact" class="btn">
+                Get In Touch <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <div class="container contact-grid">
+
+        <div class="reveal">
+
+            <span class="section-tag">GET IN TOUCH</span>
+
+            <h2 class="section-heading">
+                Have a question?<br>Let's connect.
+            </h2>
+
+            <p class="section-description">
+                Whether you are a household customer, retailer,
+                distributor or business owner, we would love to
+                hear from you.
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <span>Chat with us about our products</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <span>+91 XXXXX XXXXX</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <span>yourbusiness@example.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Business Location</strong>
+                        <span>Your City, Your State, India</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+  
+<form class="contact-form reveal" id="contactForm">
+
+    <h3>Let's Talk About Your Requirements</h3>
+    <p>Share your details and our team will get back to you.</p>
+
+    <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            maxlength="80"
+            autocomplete="name"
+            required
+            placeholder="Enter your full name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="254"
+            autocomplete="email"
+            required
+            placeholder="Enter your email address">
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            maxlength="15"
+            autocomplete="tel"
+            required
+            placeholder="Enter your phone number">
+    </div>
+
+    <div class="form-group">
+        <label for="customerType">I am a *</label>
+        <select id="customerType" name="customer_type" required>
+            <option value="" disabled selected>Select your category</option>
+            <option value="Individual Customer">Individual Customer</option>
+            <option value="Retailer">Retailer</option>
+            <option value="Wholesaler">Wholesaler</option>
+            <option value="Distributor">Distributor</option>
+            <option value="Business / Organization">Business / Organization</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="interest">Product Interested In *</label>
+        <select id="interest" name="product" required>
+            <option value="" disabled selected>Select a product</option>
+            <option value="Phenyl Floor Cleaner">Phenyl Floor Cleaner</option>
+            <option value="Bulk / Wholesale Order">Bulk / Wholesale Order</option>
+            <option value="Retail / Distribution Partnership">Retail / Distribution Partnership</option>
+            <option value="Future Products">Future Products</option>
+            <option value="Other Enquiry">Other Enquiry</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="quantity">Required Quantity (Optional)</label>
+        <input
+            type="text"
+            id="quantity"
+            name="quantity"
+            maxlength="100"
+            placeholder="e.g. 10 bottles, 50 litres, etc.">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Your Message *</label>
+        <textarea
+            id="message"
+            name="message"
+            maxlength="1000"
+            required
+            placeholder="Tell us about your requirements..."></textarea>
+    </div>
+
+    <!-- Honeypot spam protection -->
+    <div class="form-group" style="position:absolute;left:-9999px;" aria-hidden="true">
+        <label for="website">Website</label>
+        <input
+            type="text"
+            id="website"
+            name="website"
+            tabindex="-1"
+            autocomplete="off">
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="submitBtn">
+        <span id="submitText">Send Enquiry</span>
+        <i class="fa-solid fa-paper-plane" id="submitIcon"></i>
+    </button>
+
+    <div
+        class="form-message"
+        id="formMessage"
+        role="status"
+        aria-live="polite">
+    </div>
+
+    <p style="font-size:11px;margin-top:12px;color:#89958d;">
+        <i class="fa-solid fa-lock"></i>
+        Your information will only be used to respond to your enquiry.
+    </p>
+
+</form>
+
+
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <div>
+                        <div class="logo-name">CLEAN<span>YA.</span></div>
+                        <small>A CLEANER WAY OF LIVING</small>
+                    </div>
+                </a>
+
+                <p>
+                    Everyday cleaning essentials for homes,
+                    businesses and workplaces. Building a
+                    cleaner future, one product at a time.
+                </p>
+
+                <div class="socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#products">Our Products</a>
+                <a href="#about">About Us</a>
+                <a href="#why-us">Why Choose Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Our Products</h4>
+                <a href="#products">Phenyl</a>
+                <a href="#products">Floor Cleaning</a>
+                <a href="#products">Future Collection</a>
+                <a href="#contact">Product Enquiry</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect With Us</h4>
+                <a href="#contact">Contact Us</a>
+                <a href="#contact">Wholesale Enquiry</a>
+                <a href="#contact">Business Enquiry</a>
+                <a href="#contact">Customer Support</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> CLEANYA. All Rights Reserved.</p>
+            <p>A Cleaner Space. A Better Life.</p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="#" class="whatsapp" id="whatsappButton" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="SCRIPT.JS"></script>
+</body>
+</html>
